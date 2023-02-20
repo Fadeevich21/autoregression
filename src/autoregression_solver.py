@@ -3,7 +3,7 @@ from src.autoregression import autoregression
 from src.regression import Regression
 
 
-class AutoregressionSolve:
+class AutoregressionSolver:
 
     __variant: int = None
     __number_known_values: int = None
