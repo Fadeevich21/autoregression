@@ -54,9 +54,7 @@ class AutoregressionSolver:
             y.append(y_i)
 
         alpha, beta = self.__regression.execute(transpose_matrix(x), y)
+
         quality_of_autoregression = self.__regression.r_squared(alpha, beta, x, y)
-        for i in range(len(x)):
-            print(self.__regression.predict(alpha, beta, x[i]))
-        print(y)
 
         return quality_of_autoregression
